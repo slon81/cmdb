@@ -3,4 +3,5 @@
  ' password 'oracle'
 --
 SQL> CONN sys@pdb1 AS SYSDBA
-SQL> @apxchpwd.sql
+SQL> @apxchpwd.sql.  ' password 'oracle'
+
