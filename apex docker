@@ -1,0 +1,6 @@
+ chown oracle orapwXE
+ --
+ ' password 'oracle'
+--
+SQL> CONN sys@pdb1 AS SYSDBA
+SQL> @apxchpwd.sql
