@@ -6,6 +6,15 @@ SQL> CONN sys@pdb1 AS SYSDBA
 SQL> @apxchpwd.sql.  ' password 'oracle'
 
 ---   https://community.oracle.com/tech/developers/discussion/4019866/how-to-unlock-apex-admin
-alter session set current_schema = APEX_050000;
+alter session set current_schema = APEX_180100;
 
 begin wwv_flow_security.g_security_group_id := 10; wwv_flow_fnd_user_api.UNLOCK_ACCOUNT('ADMIN'); commit; end;
+
+--
+--https://www.abakus.si/download/events/2018_aljaz_mali_apex_internal_workspace.pdf
+Login to...administration services
+http://hostname:port/apex/apex_admin
+
+
+Login to...internal workspace
+http://hostname:port/apex/
